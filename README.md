@@ -1,18 +1,16 @@
-# Bitshares websocket interface (bitsharesjs-ws)
+# websocket interface (w3ajs-ws)
 
-Pure JavaScript Bitshares websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the Bitshares blockchain via public apis or local nodes.
+Pure JavaScript websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the Bitshares blockchain via public apis or local nodes.
 
-Credit for the original implementation goes to [jcalfeee](https://github.com/jcalfee).
-
-[![npm version](https://img.shields.io/npm/v/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs-ws)
-[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/bitsharesjs-ws)
+[![npm version](https://img.shields.io/npm/v/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/w3ajs-ws)
+[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/w3ajs-ws)
 
 
 ## Setup
 
 This library can be obtained through npm:
 ```
-npm install bitsharesjs-ws
+npm install w3ajs-ws
 ```
 
 ## Usage
@@ -22,16 +20,16 @@ Several examples are available in the /examples folder, and the tests in /test a
 Browser bundles are provided in /build/, for testing purposes you can access this from rawgit:
 
 ```
-<script type="text/javascript" src="https://cdn.rawgit.com/bitshares/bitsharesjs-ws/build/bitsharesjs-ws.js" />
+<script type="text/javascript" src="https://github.com/PercivalZhang/w3ajs-ws/blob/master/build/w3ajs-ws.js" />
 ```
 
-A variable bitshares_ws will be available in window.
+A variable w3ajs_ws will be available in window.
 
 For use in a webpack/browserify context, see the example below for how to open a websocket connection to the Openledger API and subscribe to any object updates:
 
 ```
-var {Apis} = require("bitsharesjs-ws");
-Apis.instance("wss://bitshares.openledger.info/ws", true).init_promise.then((res) => {
+var {Apis} = require("w3ajs-ws");
+Apis.instance("ws://47.98.107.96:21012", true).init_promise.then((res) => {
     console.log("connected to:", res[0].network);
     Apis.instance().db_api().exec( "set_subscribe_callback", [ updateListener, true ] )
 });
@@ -46,7 +44,7 @@ The `set_subscribe_callback` callback (updateListener) will be called whenever a
 This is a non-exhaustive list of endpoints available from the witness_node executable, which provides the API server of Bitshares.
 
 ## database_api
-https://github.com/bitshares/bitshares-core/blob/master/libraries/app/database_api.cpp
+https://github.com/AAAChain/AAAChain/blob/master/libraries/app/database_api.cpp
 
 __Usage examples__
 `Apis.instance().db_api().exec(method, params)`
