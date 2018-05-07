@@ -28,11 +28,11 @@
   },
   "author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
   "contributors": [
-    "James Calfee <james@jcalfee.info> (https://github.com/jcalfee/)"
+    "Percival Zhang <mingqi@email.com> (https://github.com/PercivalZhang/)"
   ],
   "license": "BSD-2-Clause-FreeBSD",
   "bugs": {
-    "url": "https://github.com/AAAChain/aaa_chain/issues"
+    "url": "https://github.com/AAAChain/AAAChain/issues"
   },
   "engines": {
     "node": ">= 6.0.0"
