@@ -1,7 +1,7 @@
 {
   "name": "w3ajs-ws",
   "version": "1.0.6",
-  "description": "Pure JavaScript Bitshares/Graphene websocket interface for node.js and browsers.",
+  "description": "Pure JavaScript websocket interface for node.js and browsers.",
   "browser": {
     "ws": false
   },
@@ -26,7 +26,7 @@
     "type": "git",
     "url": "git+https://github.com/PercivalZhang/w3ajs-ws.git"
   },
-  "author": "Sigve Kvalsvik <bitsharesblocks@gmail.com> (https://github.com/svk31)",
+  "origin-author": "Sigve Kvalsvik",
   "contributors": [
     "Percival Zhang <mingqi@email.com> (https://github.com/PercivalZhang/)"
   ],
