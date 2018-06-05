@@ -4,9 +4,6 @@ Pure JavaScript websocket library for node.js and browsers.
 Can be used to easily connect to and obtain data from the blockchain via public apis or local nodes.
 Forked from Bitshare js web socket library.
 
-[![npm version](https://img.shields.io/npm/v/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/w3ajs-ws)
-[![npm downloads](https://img.shields.io/npm/dm/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/w3ajs-ws)
-
 
 ## Setup
 
