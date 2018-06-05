@@ -5,3 +5,4 @@ cjs
 es
 *.swp
 browser-test/browser-test.js
+./idea
