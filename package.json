@@ -32,7 +32,7 @@
   ],
   "license": "BSD-2-Clause-FreeBSD",
   "bugs": {
-    "url": "https://github.com/AAAChain/AAAChain/issues"
+    "url": "https://github.com/AAAChain/w3ajs-ws/issues"
   },
   "engines": {
     "node": ">= 6.0.0"

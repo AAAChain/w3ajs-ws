@@ -1,6 +1,8 @@
 # websocket interface (w3ajs-ws)
 
-Pure JavaScript websocket library for node.js and browsers. Can be used to easily connect to and obtain data from the Bitshares blockchain via public apis or local nodes.
+Pure JavaScript websocket library for node.js and browsers. 
+Can be used to easily connect to and obtain data from the blockchain via public apis or local nodes.
+Forked from Bitshare js web socket library.
 
 [![npm version](https://img.shields.io/npm/v/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/w3ajs-ws)
 [![npm downloads](https://img.shields.io/npm/dm/bitsharesjs-ws.svg?style=flat-square)](https://www.npmjs.com/package/w3ajs-ws)
@@ -20,7 +22,7 @@ Several examples are available in the /examples folder, and the tests in /test a
 Browser bundles are provided in /build/, for testing purposes you can access this from rawgit:
 
 ```
-<script type="text/javascript" src="https://github.com/PercivalZhang/w3ajs-ws/blob/master/build/w3ajs-ws.js" />
+<script type="text/javascript" src="https://github.com/AAAChain/w3ajs-ws/blob/master/build/w3ajs-ws.js" />
 ```
 
 A variable w3ajs_ws will be available in window.
@@ -29,7 +31,7 @@ For use in a webpack/browserify context, see the example below for how to open a
 
 ```
 var {Apis} = require("w3ajs-ws");
-Apis.instance("ws://47.98.107.96:21012", true).init_promise.then((res) => {
+Apis.instance("ws://47.98.107.97:21012", true).init_promise.then((res) => {
     console.log("connected to:", res[0].network);
     Apis.instance().db_api().exec( "set_subscribe_callback", [ updateListener, true ] )
 });
